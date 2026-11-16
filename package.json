@@ -1,0 +1,21 @@
+{
+  "name": "appt-mgmt-communication-db",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MongoDB schema, migrations, and development seeds for the communication service",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "migrate": "node scripts/migrate.js",
+    "seed:dev": "node scripts/seed-development.js",
+    "test": "jest --runInBand"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "mongodb": "^6.12.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
